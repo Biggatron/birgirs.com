@@ -2,16 +2,52 @@
 <html lang="en">
 <head>
   <%- include('./partials/head'); %>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<main>
-  <div>
-    <h1>Ég heiti Birgir og ég er forritari</h1>
-    <h2>Hér eru hlutir sem ég hef smíðað:</h2>
-    <ul>
-      <li><a href="https://timer.birgirs.com">Timer</a></li>
-    </ul>
-  </div>
-</main>
+  <header>
+    <p>Hi, I'm Birgir, and I'm a SAP developer by day and a web developer by night.</p>
+  </header>
+
+  <main>
+    <h2>My Projects</h2>
+    <section id="portfolio">
+      <article class="project">
+        <div class="container">
+          <h3><a href="https://timer.birgirs.com/">Online Interval Timer</a></h3>
+          <p>A real-time interval countdown timer that allows users to create, share, and sync timers across multiple devices. 
+            Actions performed by the timer creator are syncronized with all participants ensuring consistent countdown states.
+            The timer countdown can be split in two intervals with a buffer timer in between. The intervals and buffer can be color coded to indicate what contdown is active.
+            A beeping sound can be enabled that is consitent with the IFSC climbing timer, where there's a beep at the start, 1 minute remaining mark, down from 5 seconds and an end beep.</p>
+          <ul>
+            <li>EJS</li>
+            <li>Nodejs</li>
+            <li>Postgresql</li>
+            <li>Socet.IO</li>
+          </ul>
+        </div>
+        <a class="app-image-url" href="https://timer.birgirs.com/">
+          <img src="/images/timer-app.png" alt="timer app" class="app-image">
+        </a>
+        </article>
+
+        <article class="project">
+          <div class="container">
+            <h3><a href="https://pricewatcher.birgirs.com/">Pricewatcher</a></h3>
+            <p>Pricewatcher is a tool to track changes in prices of any product on any retailers online store page. 
+              The user can either view all their tracked producs on their track page or recieve an email as soon as 
+              a price change occurs.</p>
+            <ul>
+              <li>EJS</li>
+              <li>Nodejs</li>
+              <li>Postgresql</li>
+            </ul>
+          </div>
+          <a class="app-image-url" href="https://pricewatcher.birgirs.com/">
+            <img src="/images/pricewatcher-app.png" alt="pricewatcher app" class="app-image">
+          </a>
+          </article>
+    </section>
+  </main>
 </body>
 </html>
